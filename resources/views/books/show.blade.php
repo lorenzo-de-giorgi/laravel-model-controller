@@ -3,8 +3,9 @@
 @section('title', 'Home')
 
 @section('content')
-    <ul>
+    <div class="container text-center">
         <h1>{{ $book->title }}</h1>
+        <img src="{{ $book->cover_image }}" alt="">
         <p>{{ $book->plot }}</p>
-    </ul>
+    </div>
 @endsection
