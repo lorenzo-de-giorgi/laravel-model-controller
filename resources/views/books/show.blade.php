@@ -4,8 +4,7 @@
 
 @section('content')
     <ul>
-        @foreach ($books as $book)
-            <li><a href="{{route('books.show', $book->id)}}">{{ $book->title }}</a></li>
-        @endforeach
+        <h1>{{ $book->title }}</h1>
+        <p>{{ $book->plot }}</p>
     </ul>
 @endsection
